@@ -155,7 +155,7 @@
 							 <li class="list-group-item"><i class="icon-ok text-danger"></i>Business email accounts ( 2 Users )</li>
                 </ul>
                 <div class="panel-footer">
-                    <a class="btn btn-lg btn-block btn-primary" href="http://www.jquery2dotnet.com">BUY
+                    <a class="btn btn-lg btn-block btn-primary" href="#contact">BUY
                         NOW!</a>
                 </div>
             </div>
@@ -180,7 +180,7 @@
                     <li class="list-group-item"><i class="icon-ok text-danger"></i>Business email accounts (10 Users)</li>
                 </ul>
                 <div class="panel-footer">
-                    <a class="btn btn-lg btn-block btn-warning" href="http://www.jquery2dotnet.com">BUY
+                    <a class="btn btn-lg btn-block btn-warning" href="#contact">BUY
                         NOW!</a>
                 </div>
             </div>
@@ -204,7 +204,7 @@
                           <li class="list-group-item"><i class="icon-ok text-danger"></i>Business email accounts (unlimited)</li>
                 </ul>
                 <div class="panel-footer">
-                    <a class="btn btn-lg btn-block btn-default" href="http://www.jquery2dotnet.com">BUY
+                    <a class="btn btn-lg btn-block btn-default" href="#contact">BUY
                         NOW!</a>
                 </div>
             </div>
@@ -359,20 +359,20 @@
 
                         <div class="col-md-4 col-sm-4">
                             <div class="team">
-                                <img src="img/team/SkhumbuzoMkhungo.jpg" class="img-responsive img-circle" alt="...">
+                                <img src="img/team/Skhumbuzo.jpg" class="img-responsive img-circle" alt="...">
                                 <br>
                                 <h4>Skhumbuzo Mkhungo</h4>
                                 <p class="small">Web Developer with BSc Computer Science and Business Computing at Univeristy of Cape Town</p>
-                                <hr>
+                                
                             </div>
                         </div>
 
                         <div class="col-md-4 col-sm-4">
                             <div class="team">
-                                <img src="img/team/03.jpg" class="img-responsive img-circle" alt="...">
+                                <img src="img/team/SifisoMyeza.jpg" class="img-responsive img-circle" alt="...">
                                 <br>
-                                <h4>Alan Podemski</h4>
-                                <p class="small">Web Designer</p>
+                                <h4>Sifiso Myeza</h4>
+                                <p class="small">Web Developer  with BSc Honours Computer Science at University of Zululand</p>
                                 <hr>
                             </div>
                         </div>
@@ -382,7 +382,7 @@
 
                 <div class="col-md-2 col-sm-2">
                     <div class="team hire">
-                        <h4>We Are Hiring!</h4>
+                        <h4>We Are Here for you</h4>
                         <hr>
                         <div class="space"></div>
                         <a href="#">
@@ -419,7 +419,7 @@
                   </div>
                   
                   <div class="item">
-                    <h3> A great partnership the <strong>TargetOnline</strong> team always ensure my website content is up to date </h3>
+                    <h3>  The <strong>TargetOnline</strong> team always ensure my website content is up to date, a great partnership indeed. </h3>
                     <br>
                     <h6>Chulumanco Sentile, <strong><a style="color:#C59A6D;" target="_blank" href="http://csinvestment.co.za/">CSInvestment Company</a></strong> </h6>
                   </div>
@@ -463,8 +463,8 @@
                     </address>
                 </div>
 
-                <div class="col-md-9" >
-                    <form autocomplete="off" id="form">
+                <div class="col-md-9" id="form" >
+                    <form autocomplete="off" id="form" >
                         <div class="row">
                             <div class="col-md-6">
                                 <input type="text" id="name" class="form-control" placeholder="Your Name">
@@ -477,7 +477,7 @@
                         </div>
                         <textarea class="form-control" rows="4" id="message" placeholder="Message"></textarea>
                         <div class="text-right">
-                            <a href="#" class="btn send-btn">Send</a>
+                            <input class="btn send-btn" type="submit" >
                         </div>
                     </form>
                 </div>
@@ -508,7 +508,7 @@
     <script>
       $(function(){
           $("#head-title").typed({
-            strings: ["We make websites^1000", "24/7 available for hire^1000" ,"Web design with diffence^1000"],
+            strings: ["We Build and Maintain websites ^1000", "24/7 available for hire^1000"],
             typeSpeed: 100,
             loop: true,
             startDelay: 100
@@ -525,7 +525,7 @@
 		var subject = $('#subject');
 		var message = $('#message');
 		var variable =false;
-		
+		console.log("open");	
 		<!-- console.log("name: "+name.val()); -->
 		<!-- console.log("email: "+email.val()); -->
 		<!-- console.log("subject: "+subject.val()); -->
@@ -544,9 +544,9 @@
 			e.preventDefault();
 			
 			 setTimeout(function() {
-				location.reload(true); 
-			  }, 750);
-					
+			location.reload(true); 
+		}, 750);
+			console.log("out");		
 		}
 	})
 	
